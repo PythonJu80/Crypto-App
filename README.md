@@ -33,20 +33,34 @@ Crypto-App is a comprehensive cryptocurrency trading and portfolio management ap
 - npm or yarn
 - SQLite (for local database)
 
+arkdown alone doesn’t support buttons or interactive functionality, but GitHub READMEs allow you to embed raw HTML alongside Markdown for custom features.
+
+Here's how you can add copy-to-clipboard functionality for your commands in the README:
+
+Example with Copy Buttons
+markdown
+Copy code
 ### Setup Instructions
+
 1. Clone the repository:
+   ```bash
    git clone https://github.com/PythonJu80/Crypto-App.git
    cd Crypto-App
+<button onclick="navigator.clipboard.writeText('git clone https://github.com/PythonJu80/Crypto-App.git && cd Crypto-App')">Copy</button>
+
 Install dependencies:
 
+bash
+Copy code
 npm install
-Set up environment variables:
+<button onclick="navigator.clipboard.writeText('npm install')">Copy</button>
 
-Copy .env.example to .env.development, .env.production, and .env.test.
-Fill in the necessary API keys, database credentials, and secrets.
-Seed the database (for local use):
+Seed the database:
 
+bash
+Copy code
 node src/database/seed.js
+<button onclick="navigator.clipboard.writeText('node src/database/seed.js')">Copy</button>
 Start the development server:
 
 
