@@ -68,27 +68,27 @@ SQLite
 Clone the repository
 
 git clone https://github.com/PythonJu80/Crypto-App.git && cd Crypto-App
-<button onclick="navigator.clipboard.writeText('git clone https://github.com/PythonJu80/Crypto-App.git && cd Crypto-App')">Copy</button>
+<button onclick="navigator.clipboard.writeText('git clone https://github.com/PythonJu80/Crypto-App.git && cd Crypto-App')">
 
 Install dependencies
 
 npm install
-<button onclick="navigator.clipboard.writeText('npm install')">Copy</button>
+<button onclick="navigator.clipboard.writeText('npm install')">
 
 Set up environment variables
 
 cp .env.example .env
-<button onclick="navigator.clipboard.writeText('cp .env.example .env')">Copy</button>
+<button onclick="navigator.clipboard.writeText('cp .env.example .env')">
 
 Initialize the database
 
 node src/database/seed.js
-<button onclick="navigator.clipboard.writeText('node src/database/seed.js')">Copy</button>
+<button onclick="navigator.clipboard.writeText('node src/database/seed.js')">
 
 Start development server
 
 npm run dev
-<button onclick="navigator.clipboard.writeText('npm run dev')">Copy</button>
+<button onclick="navigator.clipboard.writeText('npm run dev')">
 
 
 📁 Project Structure
@@ -110,21 +110,21 @@ Crypto-App/
 🛠️ Available Scripts
 Development
  npm run dev     # Start development server
-<button onclick="navigator.clipboard.writeText('npm run dev')">Copy</button>
+<button onclick="navigator.clipboard.writeText('npm run dev')">
  npm run lint    # Run ESLint
-<button onclick="navigator.clipboard.writeText('npm run lint')">Copy</button>
+<button onclick="navigator.clipboard.writeText('npm run lint')">
  npm run format  # Format with Prettier
-<button onclick="navigator.clipboard.writeText('npm run format')">Copy</button>
+<button onclick="navigator.clipboard.writeText('npm run format')">
 Testing
  npm run test        # Run all tests
-<button onclick="navigator.clipboard.writeText('npm run test')">Copy</button>
+<button onclick="navigator.clipboard.writeText('npm run test')">
  npm run test:unit   # Run unit tests
-<button onclick="navigator.clipboard.writeText('npm run test:unit')">Copy</button>
+<button onclick="navigator.clipboard.writeText('npm run test:unit')">
  npm run test:ci     # Run CI tests
-<button onclick="navigator.clipboard.writeText('npm run test:ci')">Copy</button>
+<button onclick="navigator.clipboard.writeText('npm run test:ci')">
 Production
  npm run build   # Build for production
-<button onclick="navigator.clipboard.writeText('npm run build')">Copy</button>
+<button onclick="navigator.clipboard.writeText('npm run build')">
 🚀 Deployment
 Netlify Setup
 
@@ -144,17 +144,17 @@ Fork the repository
 Create your feature branch
 
  git checkout -b feature/amazing-feature
-<button onclick="navigator.clipboard.writeText('git checkout -b feature/amazing-feature')">Copy</button>
+<button onclick="navigator.clipboard.writeText('git checkout -b feature/amazing-feature')">
 
 Commit your changes
 
  git commit -m 'Add amazing feature'
-<button onclick="navigator.clipboard.writeText('git commit -m "Add amazing feature"')">Copy</button>
+<button onclick="navigator.clipboard.writeText('git commit -m "Add amazing feature"')">
 
 Push to the branch
 
  git push origin feature/amazing-feature
-<button onclick="navigator.clipboard.writeText('git push origin feature/amazing-feature')">Copy</button>
+<button onclick="navigator.clipboard.writeText('git push origin feature/amazing-feature')">
 
 Open a Pull Request
 
