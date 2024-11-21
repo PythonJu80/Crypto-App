@@ -105,7 +105,7 @@ Crypto-App/
 
 ## 🛠️ Available Scripts
 
-### Development
+### 👨‍💻 Development
 ```bash
 npm run dev     # Start development server
 ```
@@ -121,7 +121,7 @@ npm run format  # Format with Prettier
 ```
 <button onclick="navigator.clipboard.writeText('npm run format')">Copy</button>
 
-### Testing
+### 🧪 Testing
 ```bash
 npm run test        # Run all tests
 ```
@@ -137,7 +137,7 @@ npm run test:ci     # Run CI tests
 ```
 <button onclick="navigator.clipboard.writeText('npm run test:ci')">Copy</button>
 
-### Production
+### 🏭 Production
 ```bash
 npm run build   # Build for production
 ```
@@ -190,60 +190,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 PythonJu80 - [GitHub Profile](https://github.com/PythonJu80)
 
 Project Link: [https://github.com/PythonJu80/Crypto-App](https://github.com/PythonJu80/Crypto-App)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-[Previous sections remain the same until Available Scripts...]
-
-## 🛠️ Available Scripts
-
-### 👨‍💻 Development
-```bash
-npm run dev     # Start development server
-```
-<button onclick="navigator.clipboard.writeText('npm run dev')"><span style="font-size: 75%">Copy</span></button>
-
-```bash
-npm run lint    # Run ESLint
-```
-<button onclick="navigator.clipboard.writeText('npm run lint')"><span style="font-size: 75%">Copy</span></button>
-
-```bash
-npm run format  # Format with Prettier
-```
-<button onclick="navigator.clipboard.writeText('npm run format')"><span style="font-size: 75%">Copy</span></button>
-
-### 🧪 Testing
-```bash
-npm run test        # Run all tests
-```
-<button onclick="navigator.clipboard.writeText('npm run test')"><span style="font-size: 75%">Copy</span></button>
-
-```bash
-npm run test:unit   # Run unit tests
-```
-<button onclick="navigator.clipboard.writeText('npm run test:unit')"><span style="font-size: 75%">Copy</span></button>
-
-```bash
-npm run test:ci     # Run CI tests
-```
-<button onclick="navigator.clipboard.writeText('npm run test:ci')"><span style="font-size: 75%">Copy</span></button>
-
-### 🏭 Production
-```bash
-npm run build   # Build for production
-```
-<button onclick="navigator.clipboard.writeText('npm run build')"><span style="font-size: 75%">Copy</span></button>
-
-[Rest of the document remains the same...]
