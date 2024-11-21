@@ -41,11 +41,11 @@ Crypto-App is a comprehensive cryptocurrency trading and portfolio management ap
 <button onclick="navigator.clipboard.writeText('git clone https://github.com/PythonJu80/Crypto-App.git && cd Crypto-App')">Copy</button>
 
 Install dependencies:
-npm install
+   npm install
 <button onclick="navigator.clipboard.writeText('npm install')">Copy</button>
 
 Seed the database:
-node src/database/seed.js
+   node src/database/seed.js
 <button onclick="navigator.clipboard.writeText('node src/database/seed.js')">Copy</button>
 
 Start the development server:
