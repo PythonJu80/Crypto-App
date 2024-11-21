@@ -43,30 +43,21 @@ Copy code
 ### Setup Instructions
 
 1. Clone the repository:
-   ```bash
    git clone https://github.com/PythonJu80/Crypto-App.git
    cd Crypto-App
 <button onclick="navigator.clipboard.writeText('git clone https://github.com/PythonJu80/Crypto-App.git && cd Crypto-App')">Copy</button>
 
 Install dependencies:
-
-bash
-Copy code
 npm install
 <button onclick="navigator.clipboard.writeText('npm install')">Copy</button>
 
 Seed the database:
-
-bash
-Copy code
 node src/database/seed.js
 <button onclick="navigator.clipboard.writeText('node src/database/seed.js')">Copy</button>
+
 Start the development server:
-
-
 npm run dev
-
----
+<button onclick="navigator.clipboard.writeText('node npm run dev')">Copy</button>
 
 Project Structure
 
@@ -95,22 +86,29 @@ Scripts
 Development
 
 npm run dev       # Start the development server
+<button onclick="navigator.clipboard.writeText('node npm run dev')">Copy</button>
 npm run lint      # Lint the codebase
+<button onclick="navigator.clipboard.writeText('node npm run lint')">Copy</button>
 npm run format    # Format code with Prettier
+<button onclick="navigator.clipboard.writeText('node npm run format')">Copy</button>
+
 
 ---
 
 Testing
 npm run test      # Run all tests
+<button onclick="navigator.clipboard.writeText('node npm run test:unit')">Copy</button>
 npm run test:unit # Run unit tests
+<button onclick="navigator.clipboard.writeText('node npm run test:unit')">Copy</button>
 npm run test:ci   # Run tests for CI/CD
+<button onclick="navigator.clipboard.writeText('node npm run test:ci')">Copy</button>
 
 ---
 
 Deployment
 
 npm run build     # Build for production
-
+<button onclick="navigator.clipboard.writeText('node npm run build')">Copy</button>
 
 ---
 
