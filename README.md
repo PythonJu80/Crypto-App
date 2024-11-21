@@ -33,13 +33,6 @@ Crypto-App is a comprehensive cryptocurrency trading and portfolio management ap
 - npm or yarn
 - SQLite (for local database)
 
-arkdown alone doesn’t support buttons or interactive functionality, but GitHub READMEs allow you to embed raw HTML alongside Markdown for custom features.
-
-Here's how you can add copy-to-clipboard functionality for your commands in the README:
-
-Example with Copy Buttons
-markdown
-Copy code
 ### Setup Instructions
 
 1. Clone the repository:
