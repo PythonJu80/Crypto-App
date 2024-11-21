@@ -42,7 +42,7 @@ Crypto-App is a comprehensive cryptocurrency trading and portfolio management ap
 
 Install dependencies:
    npm install
-<button onclick="navigator.clipboard.writeText('npm install')">Copy</button>
+<button onclick="navigator.clipboard.writeText('npm install')"></button>
 
 Seed the database:
    node src/database/seed.js
