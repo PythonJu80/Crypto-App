@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-money-dark text-pepe-light font-sans antialiased;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-pepe-dark;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-pepe-primary/50 rounded-full hover:bg-pepe-primary transition-colors;
+}
+
+/* Focus styles */
+:focus-visible {
+  @apply outline-none ring-2 ring-pepe-primary ring-offset-2 ring-offset-pepe-dark;
+}
+
+/* Loading animation */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin 2s linear infinite;
+}
+
+/* Money-themed styles */
+.money-card {
+  @apply bg-money-dark rounded-lg border-2 border-pepe-primary shadow-money
+         hover:shadow-money-hover transition-all duration-300;
+}
+
+.money-button {
+  @apply bg-money-gradient text-pepe-dark font-bold py-2 px-4 rounded-full
+         hover:brightness-110 transition-all duration-300
+         focus:outline-none focus:ring-2 focus:ring-pepe-accent;
+}
+
+.money-heading {
+  @apply font-['Roboto_Mono'] text-pepe-primary;
+}
+
+.money-chart {
+  @apply bg-money-dark backdrop-blur-sm rounded-xl p-4
+         border-2 border-pepe-primary;
+}
