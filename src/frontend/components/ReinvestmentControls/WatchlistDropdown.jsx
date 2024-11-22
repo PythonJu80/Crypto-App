@@ -76,3 +76,5 @@ const WatchlistDropdown = ({ selectedCoins, onSelectionChange }) => {
     </div>
   );
 };
+
+export default WatchlistDropdown;

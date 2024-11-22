@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { ArrowUpIcon, ArrowDownIcon } from '@heroicons/react/24/solid';
 
 const Summary = ({ data }) => {
@@ -61,3 +62,19 @@ const Summary = ({ data }) => {
     </div>
   );
 };
+
+Summary.propTypes = {
+  data: PropTypes.shape({
+    totalValueFormatted: PropTypes.string.isRequired,
+    profitLoss: PropTypes.number.isRequired,
+    profitLossFormatted: PropTypes.string.isRequired,
+    profitLossPercentage: PropTypes.number.isRequired,
+    totalAssets: PropTypes.number.isRequired,
+    largestHolding: PropTypes.shape({
+      symbol: PropTypes.string.isRequired,
+      allocation: PropTypes.number.isRequired,
+    }),
+  }).isRequired,
+};
+
+export default Summary;

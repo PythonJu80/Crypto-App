@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip } from 'recharts';
 
 const COLORS = ['#00FF00', '#98FF98', '#32CD32', '#006400', '#90EE90'];
@@ -21,6 +22,19 @@ const CustomTooltip = ({ active, payload }) => {
       </p>
     </div>
   );
+};
+
+CustomTooltip.propTypes = {
+  active: PropTypes.bool,
+  payload: PropTypes.arrayOf(
+    PropTypes.shape({
+      payload: PropTypes.shape({
+        name: PropTypes.string.isRequired,
+        value: PropTypes.number.isRequired,
+        rawValue: PropTypes.number.isRequired,
+      }),
+    })
+  ),
 };
 
 const HoldingsDistribution = ({ data }) => {
@@ -96,3 +110,24 @@ const HoldingsDistribution = ({ data }) => {
     </div>
   );
 };
+
+HoldingsDistribution.propTypes = {
+  data: PropTypes.shape({
+    chartData: PropTypes.arrayOf(
+      PropTypes.shape({
+        name: PropTypes.string.isRequired,
+        value: PropTypes.number.isRequired,
+        rawValue: PropTypes.number.isRequired,
+      })
+    ).isRequired,
+    top: PropTypes.arrayOf(
+      PropTypes.shape({
+        symbol: PropTypes.string.isRequired,
+        allocation: PropTypes.number.isRequired,
+        value: PropTypes.number.isRequired,
+      })
+    ).isRequired,
+  }).isRequired,
+};
+
+export default HoldingsDistribution;

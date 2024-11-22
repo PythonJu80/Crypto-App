@@ -1,13 +1,15 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const ErrorAlert = ({ message, onRetry }) => (
-  <div className="rounded-lg bg-pepe-dark/90 p-6 border-2 border-pepe-error animate-usb-pulse">
+  <div className="rounded-lg bg-pepe-dark/90 p-6 border-2 border-pepe-error animate-usb-pulse" role="alert">
     <div className="flex">
       <div className="flex-shrink-0">
         <svg
           className="h-6 w-6 text-pepe-error"
           viewBox="0 0 20 20"
           fill="currentColor"
+          aria-hidden="true"
         >
           <path
             fillRule="evenodd"
@@ -21,13 +23,27 @@ const ErrorAlert = ({ message, onRetry }) => (
           Error
         </h3>
         <p className="mt-2 text-pepe-light">{message}</p>
-        <button
-          onClick={onRetry}
-          className="mt-4 pepe-button"
-        >
-          Try again
-        </button>
+        {onRetry && (
+          <button
+            onClick={onRetry}
+            className="mt-4 pepe-button"
+            aria-label="Try again"
+          >
+            Try again
+          </button>
+        )}
       </div>
     </div>
   </div>
 );
+
+ErrorAlert.propTypes = {
+  message: PropTypes.string.isRequired,
+  onRetry: PropTypes.func
+};
+
+ErrorAlert.defaultProps = {
+  onRetry: null
+};
+
+export default ErrorAlert;

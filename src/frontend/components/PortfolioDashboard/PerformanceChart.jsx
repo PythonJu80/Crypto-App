@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 import {
   BarChart,
   Bar,
@@ -6,7 +7,8 @@ import {
   YAxis,
   CartesianGrid,
   Tooltip,
-  ResponsiveContainer
+  ResponsiveContainer,
+  Cell
 } from 'recharts';
 
 const CustomTooltip = ({ active, payload }) => {
@@ -28,6 +30,19 @@ const CustomTooltip = ({ active, payload }) => {
       </p>
     </div>
   );
+};
+
+CustomTooltip.propTypes = {
+  active: PropTypes.bool,
+  payload: PropTypes.arrayOf(
+    PropTypes.shape({
+      payload: PropTypes.shape({
+        symbol: PropTypes.string.isRequired,
+        value: PropTypes.number.isRequired,
+        profitLoss: PropTypes.number.isRequired,
+      }),
+    })
+  ),
 };
 
 const PerformanceChart = ({ data }) => {
@@ -97,3 +112,19 @@ const PerformanceChart = ({ data }) => {
     </div>
   );
 };
+
+PerformanceChart.propTypes = {
+  data: PropTypes.shape({
+    chartData: PropTypes.arrayOf(
+      PropTypes.shape({
+        symbol: PropTypes.string.isRequired,
+        value: PropTypes.number.isRequired,
+        profitLoss: PropTypes.number.isRequired,
+      })
+    ).isRequired,
+    tradeCount: PropTypes.number.isRequired,
+    volume: PropTypes.number.isRequired,
+  }).isRequired,
+};
+
+export default PerformanceChart;
