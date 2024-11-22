@@ -12,7 +12,6 @@
     "test:ci": "NODE_OPTIONS=--experimental-vm-modules jest --ci --coverage --maxWorkers=2",
     "lint": "eslint . --ext .js,.jsx --fix",
     "format": "prettier --write \"src/**/*.{js,jsx}\"",
-    "prepare": "husky install",
     "db:init": "node src/database/init.js",
     "db:seed": "node src/database/seed.js",
     "db:verify": "node src/database/verifySeed.js"
